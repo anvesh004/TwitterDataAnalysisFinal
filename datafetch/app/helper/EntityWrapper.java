@@ -16,8 +16,6 @@ public class EntityWrapper {
     public List<String> handles;
 
     public EntityWrapper(int id) {
-
-        URLConnection
         AppEntity appEntity = EntityRepo.getEntityFromId(id);
         this.name = appEntity.entityName;
         this.id = appEntity.entityId;
