@@ -34,4 +34,9 @@ public class SimpleStream {
             FilterStream filterStream = new FilterStream(34577867, follow, null, new AccessToken(accessToken, accessTokenSecret), publisher);
         filterStream.filter();
     }
+
+    public static void main(String[] args) throws IOException, InterruptedException {
+        SimpleStream simpleStream = new SimpleStream(new Publisher("TweetRepo"));
+        simpleStream.sample();
+    }
 }
