@@ -82,7 +82,7 @@ constraint pk_sentiment primary key(id))
 
 create table topics (
 id bigint auto_increment not null,
-name varchar(255),
+hashtag varchar(255),
 entity_id integer,
 created_at datetime,
 count bigint,
@@ -98,7 +98,6 @@ retweet_count bigint,
 created_at datetime,
 screen_name varchar(255),
 constraint pk_topics primary key(id))
-)
 ;
 
 alter table entity add constraint fk_entity_token_1 foreign key (user_id) references token (user_id) on delete restrict on update restrict;

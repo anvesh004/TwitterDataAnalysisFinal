@@ -10,16 +10,15 @@ import helper.JsonHelper;
 import play.mvc.*;
 
 import stream.StreamManagement;
-import views.html.*;
 
 import java.io.IOException;
 import java.util.Date;
 
 public class Application extends Controller { //todo: remove duplication in methods
 
-    public static Result index() {
+    /*public static Result index() {
         return ok(index.render("Your new application is ready."));
-    }
+    }*/
 
     public static Result options(String url){
         return ok();

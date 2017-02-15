@@ -24,7 +24,7 @@ public class AppLookupService {
     public void findFollowersCount(List<String> handles) throws TwitterException {
         List<String> screenNames = new ArrayList();
         for (String handle: handles){
-            screenNames.add(handle.substring(1));
+            screenNames.add(handle.substring(0));
         }
 
         for (int i = 0; i < screenNames.size(); i += 100){

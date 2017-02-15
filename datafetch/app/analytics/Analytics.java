@@ -44,7 +44,6 @@ public class Analytics {
     private static List<Integer> findEntity(TweetWrapper tweetWrapper) {
         Status status = tweetWrapper.status;
         String text = getOriginalTweet(status);
-        System.out.println(text);
         List<Integer> presentEntities = new ArrayList<>();
         List<Integer> entities = EntityRepo.getEntitiesForUser(tweetWrapper.requestId);
         for (Integer entity : entities) {

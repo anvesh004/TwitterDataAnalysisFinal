@@ -28,13 +28,13 @@ public class GeoRepo {
 
     public static JsonNode getGeoDistribution(int entityId, Date startTime, Date endTime){
         if (startTime.equals(DatetimeHelper.getDateFromString("19700101000000"))) {
-            startTime = new Date(System.currentTimeMillis() - 21600000L); //43200 = 12 * 60 * 60
+            startTime = new Date(System.currentTimeMillis() - 216000000L); //43200 = 12 * 60 * 60
         }
 
         List<Geography> geographyList = Ebean.find(Geography.class).where()
                                         .eq("entity_id", entityId)
                                         .le("created_at", endTime)
-                                        .ge("created_at", startTime)
+                                        //.ge("created_at", startTime)
                                         .findList();
 
         return JsonHelper.jsonify(geographyList);

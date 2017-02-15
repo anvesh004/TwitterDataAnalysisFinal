@@ -18,7 +18,7 @@ import java.util.Properties;
 public class StanfordNLP {
     private String document;
 
-    public void addDocument(Collection<String> sentences) {
+    void addDocument(Collection<String> sentences) {
         List<String> text = new ArrayList<>();
         for(String sentence: sentences){
             String tweet = sentence.replace(".", "");
@@ -28,7 +28,7 @@ public class StanfordNLP {
         this.document = Joiner.on(". ").join(text);
     }
 
-    public List<Integer> score() {
+    List<Integer> score() {
         List<Integer> scores = Lists.newArrayList();
         Properties props = new Properties();
         props.put("annotators", "tokenize, ssplit, pos, parse, sentiment");

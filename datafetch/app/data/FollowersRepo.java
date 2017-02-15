@@ -62,7 +62,7 @@ public class FollowersRepo {
     }
 
     public static List<Followers> getFollowers(String handle, Date startTime, Date endTime){
-        return Ebean.find(Followers.class).where().eq("screen_name", handle)
+        return Ebean.find(Followers.class).where().eq("screen_name", "@" + handle)
                 .le("time", endTime)
                 .ge("time", startTime)
                 .findList();
