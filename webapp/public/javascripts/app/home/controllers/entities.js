@@ -5,7 +5,7 @@ home.controller("entitiesCtrl", ["$http", function($http) {
         return request + "?tk=" + self.accessToken.token + "&tk_sec=" + self.accessToken.tokenSecret;
     };
 
-    self.apiRoot = "http://127.0.0.1:9090/api/";
+    self.apiRoot = "http://127.0.0.1:9091/api/";
     self.accessToken = accessToken;
     self._emptyFormInput = {
         name: "",
