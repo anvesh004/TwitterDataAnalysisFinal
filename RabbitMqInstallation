@@ -14,4 +14,4 @@ Step 4 : Install rabbitmq-server package
 
          $sudo apt-get install rabbitmq-server
 Step 5: Enable Rabbitmq ui plugin
-            $sudo rabbitmq-plugins enable rabbitmq_management
+         $sudo rabbitmq-plugins enable rabbitmq_management
