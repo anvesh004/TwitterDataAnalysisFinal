@@ -82,7 +82,7 @@ constraint pk_sentiment primary key(id))
 
 create table topics (
 id bigint auto_increment not null,
-hashtag varchar(255),
+name varchar(255),
 entity_id integer,
 created_at datetime,
 count bigint,

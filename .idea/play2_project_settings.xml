@@ -14,8 +14,8 @@
           <value>
             <ProjectSettingsEntry>
               <option name="version" value="2.2.6" />
-              <option name="sourceDir" value="$PROJECT_DIR$/datafetch/app" />
-              <option name="confDir" value="$PROJECT_DIR$/datafetch/conf" />
+              <option name="sourceDir" value="$PROJECT_DIR$/datafetch/conf" />
+              <option name="confDir" value="$PROJECT_DIR$/datafetch/app" />
               <option name="routesImports">
                 <list>
                   <option value="play.libs.F" />
